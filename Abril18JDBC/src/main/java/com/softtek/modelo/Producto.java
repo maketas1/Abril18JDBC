@@ -7,9 +7,10 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 @Data
-public class Tarea {
-    private int idTarea;
-    private String descripcion;
+public class Producto {
 
-
+    private int idProducto;
+    private String nombreProducto;
+    private double precioUnitario;
+    private int unidadesStock;
 }
