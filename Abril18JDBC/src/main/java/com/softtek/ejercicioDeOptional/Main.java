@@ -10,7 +10,6 @@ public class Main {
         List<Integer> numeros = new ArrayList<>(List.of(1, 2, 3, 4, 5, 6, 7, 8, 9, 10));
         int posicion = 4;
 
-
         System.out.println("Ejercicio 1");
         Optional<String> usuario = Optional.ofNullable(nombreUsuario);
         usuario.ifPresentOrElse(
