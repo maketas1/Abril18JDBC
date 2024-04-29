@@ -74,12 +74,11 @@ public class ProductoRepo extends Conexion implements IProductoRepo {
     }
 
     @Override
-    public Producto updateUno(int id) throws SQLException, ClassNotFoundException {
-        String sql = "UPDATE products SET product_name = 'Leche' WHERE product_id = " + id + ";";
+    public Producto updateUno(Producto p) throws SQLException, ClassNotFoundException {
+        String sql = "UPDATE products SET product_name = 'Leche' WHERE product_id = " + p.getIdProducto() + ";";
         abrirConexion();
         PreparedStatement sentencia = miConexion.prepareStatement(sql);
         sentencia.executeUpdate();
-        Producto p = obtenerUno(id);
         return p;
     }
 }

@@ -10,5 +10,5 @@ public interface IProductoRepo {
     Producto obtenerUno(int id) throws SQLException, ClassNotFoundException;
     void alta(Producto p) throws SQLException, ClassNotFoundException;
     void eliminarUno(int id) throws SQLException, ClassNotFoundException;
-    Producto updateUno(int id) throws SQLException, ClassNotFoundException;
+    Producto updateUno(Producto p) throws SQLException, ClassNotFoundException;
 }

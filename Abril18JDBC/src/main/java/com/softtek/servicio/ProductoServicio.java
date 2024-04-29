@@ -34,7 +34,7 @@ public class ProductoServicio implements IProductoServicio {
     }
 
     @Override
-    public Producto updateUno(int id) throws SQLException, ClassNotFoundException {
-        return repo.updateUno(id);
+    public Producto updateUno(Producto p) throws SQLException, ClassNotFoundException {
+        return repo.updateUno(p);
     }
 }
